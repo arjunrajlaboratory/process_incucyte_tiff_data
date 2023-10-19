@@ -54,7 +54,7 @@ For each TIFF file in the input directory, the script takes the folder name, rem
 ## Installation
 Navigate to the repository directory and run the following command:
 ```bash
-pip install process_incucyte_tiff_data
+pip install .
 ```
 
 ## Usage
