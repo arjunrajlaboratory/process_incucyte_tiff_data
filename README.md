@@ -11,6 +11,7 @@ pip install process_incucyte_tiff_data
 ## Usage
 After installation, you can use the command-line interface to process your TIFF images. Here are the available options:
 
+```
 usage: process-incucyte-tiff-data [-h] [-i INPUT_DIRECTORY] [-o OUTPUT_DIRECTORY] [-t THRESHOLD]
 
 Process Incucyte TIFF data.
@@ -23,11 +24,12 @@ optional arguments:
                         Output directory (default: ./fixed_files)
   -t THRESHOLD, --threshold THRESHOLD
                         Threshold value (default: 65000)
-The input-directory parameter is used to specify the directory where your folders with TIFF files are located. The output-directory parameter is used to specify the directory where you want to save the processed TIFF files. The threshold parameter is used to specify the value above which pixel values in the 16-bit images will be set to 0.
+```
+The `input-directory` parameter is used to specify the directory where your folders with TIFF files are located. The `output-directory` parameter is used to specify the directory where you want to save the processed TIFF files. The `threshold` parameter is used to specify the value above which pixel values in the 16-bit images will be set to 0.
 
-For example, to process TIFF files in the folder /path/to/tiff/files, and save the processed files to /path/to/fixed/files with a threshold value of 65000, you would run:
+For example, to process TIFF files in the folder `/path/to/tiff/files`, and save the processed files to `/path/to/fixed/files` with a threshold value of 40000, you would run:
 
 ```bash
-process-incucyte-tiff-data -i /path/to/tiff/files -o /path/to/fixed/files -t 65000
+process-incucyte-tiff-data -i /path/to/tiff/files -o /path/to/fixed/files -t 40000
 ```
-If you don't specify any parameters, the script will use the current working directory as the input directory, ./fixed_files as the output directory, and 65000 as the threshold value.
+If you don't specify any parameters, the script will use the current working directory as the input directory, `./fixed_files` as the output directory, and 65000 as the threshold value.
