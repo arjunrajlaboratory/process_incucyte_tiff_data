@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.py
 process_incucyte_tiff_data/__init__.py
@@ -6,4 +7,5 @@ process_incucyte_tiff_data.egg-info/PKG-INFO
 process_incucyte_tiff_data.egg-info/SOURCES.txt
 process_incucyte_tiff_data.egg-info/dependency_links.txt
 process_incucyte_tiff_data.egg-info/entry_points.txt
+process_incucyte_tiff_data.egg-info/requires.txt
 process_incucyte_tiff_data.egg-info/top_level.txt

@@ -12,6 +12,7 @@ setup(
     install_requires=[
         'tifffile',  # Add 'tifffile' to the list of required packages
         'imagecodecs', # Add 'imagecodecs' to the list of required packages
+        'pystackreg',  # Add 'pystackreg' to the list of required packages
         # You can specify versions as well, e.g., 'tifffile>=2021.7.2', 'imagecodecs>=2021.6.8'
         # Add any other required packages here, each as a string in this list
     ],
