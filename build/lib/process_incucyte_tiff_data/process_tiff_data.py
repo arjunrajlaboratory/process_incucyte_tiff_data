@@ -78,6 +78,10 @@ def process_tiff_data(input_directory, output_directory, threshold=65000, regist
                     elif image.dtype == np.uint8:
                         image = np.uint16(image) * 256
 
+                    # If the image is an RGB image for some reason, convert to grayscale by taking just the red channel (assuming they are all the same)
+                    if image.ndim == 3:
+                        image = image[:, :, 0]
+
                     new_filename = f"{folder_name}_{filename}"
                     destination_path = os.path.join(output_directory, new_filename)
                     tf.imwrite(destination_path, image, dtype=image.dtype)
