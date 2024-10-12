@@ -9,6 +9,8 @@ def crop_center(img, fraction=0.1):
     """Crop the center of the image based on the given fraction."""
     if not 0 < fraction <= 1:
         raise ValueError("Fraction must be between 0 and 1 (exclusive of 0 and inclusive of 1).")
+    if fraction == 1:
+        return img
     center_x, center_y = img.shape[1] // 2, img.shape[0] // 2
     width_x = int(img.shape[1] * fraction)
     width_y = int(img.shape[0] * fraction)
